@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" class="js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ravi Teja — Frontend Developer</title>
+  <meta name="description" content="Vadrevu Sai Ravi Teja is a frontend developer in Bengaluru with six years of experience, currently at Galleri5." />
+  <meta name="theme-color" content="#F4F2EC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400..600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Hide intro elements only when motion will run; reveal everything if the libraries never arrive.
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('motion');
+      setTimeout(function () {
+        if (!window.__motionReady) document.documentElement.classList.remove('motion');
+      }, 4000);
+    }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">ravi teja</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a class="btn btn-sm" href="#contact">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ───────── INFO ───────── -->
+    <section class="hero wrap" id="top">
+      <h1 class="hero-title">
+        <span class="line"><span>Hi, I’m Ravi Teja.</span></span>
+        <span class="line"><span>I build <mark class="hl">interfaces</mark></span></span>
+        <span class="line"><span>for the web.</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Vadrevu Sai Ravi Teja, frontend developer with six years of experience building fast,
+        accessible products. Currently at Galleri5 in Bengaluru.
+      </p>
+
+      <dl class="facts">
+        <div><dt>Role</dt><dd>Frontend Developer</dd></div>
+        <div><dt>Experience</dt><dd>6 years</dd></div>
+        <div><dt>Currently</dt><dd>Galleri5</dd></div>
+        <div><dt>Based in</dt><dd>Bengaluru, India</dd></div>
+      </dl>
+    </section>
+
+    <!-- ───────── PROJECTS (samples, replace with your own) ───────── -->
+    <section class="projects wrap" id="projects">
+      <h2 class="h2">Projects</h2>
+
+      <div class="grid">
+        <article class="project">
+          <div class="art g-rings" aria-hidden="true"><div class="art-inner"></div></div>
+          <div class="project-info">
+            <h3>Creator program builder</h3>
+            <span class="year">2025</span>
+          </div>
+          <p>A step-by-step flow that turns a brand’s website into a ready-to-launch creator program.</p>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="art g-grid" aria-hidden="true"><div class="art-inner"></div></div>
+          <div class="project-info">
+            <h3>Campaign dashboard</h3>
+            <span class="year">2024</span>
+          </div>
+          <p>A keyboard-first workspace for reviewing creator content and tracking campaign results.</p>
+          <ul class="tags"><li>React</li><li>Zustand</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="art g-stack" aria-hidden="true"><div class="art-inner"></div></div>
+          <div class="project-info">
+            <h3>Component library</h3>
+            <span class="year">2023</span>
+          </div>
+          <p>Shared tokens and components used by four product teams, documented in Storybook.</p>
+          <ul class="tags"><li>React</li><li>Storybook</li></ul>
+        </article>
+
+        <article class="project">
+          <div class="art g-arc" aria-hidden="true"><div class="art-inner"></div></div>
+          <div class="project-info">
+            <h3>Motion primitives</h3>
+            <span class="year">2022</span>
+          </div>
+          <p>Small, reusable scroll and reveal helpers that respect reduced-motion settings.</p>
+          <ul class="tags"><li>GSAP</li><li>CSS</li></ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap" id="contact">
+    <a class="footer-email" href="mailto:sairaviteja.vadrevu@gmail.com">sairaviteja.vadrevu@gmail.com</a>
+    <div class="footer-row">
+      <span>© 2026 Vadrevu Sai Ravi Teja</span>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/vadrevu-sai-ravi-teja/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/sairaviteja-vadrevu" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

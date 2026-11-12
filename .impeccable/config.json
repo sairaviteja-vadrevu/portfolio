@@ -1,0 +1,41 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T16:59:27.843Z",
+        "reason": "Claude's call: line-height .8–.95 applies only to oversized display headings (hero name, Say hello, section titles); body copy is 1.6"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T17:08:00.080Z",
+        "reason": "Claude's call: flagged .about, .contact-box and .footer-row all have 1.25rem–6rem padding in styles.css; detector misread static HTML"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T17:08:07.666Z",
+        "reason": "User's brief: asked for the ink & editorial theme from their reference screenshot, which uses this warm paper background"
+      },
+      {
+        "rule": "overused-font",
+        "value": "instrument sans",
+        "createdAt": "2026-11-12T17:11:22.767Z",
+        "reason": "User's brief: user explicitly asked for Bricolage Grotesque and Instrument Sans"
+      }
+    ]
+  }
+}
